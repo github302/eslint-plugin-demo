@@ -37,7 +37,7 @@ ruleTester.run("settimeout-no-number", rule, {
         {
             code: "setTimeout(() => { console.log(22); }, 1000)",
             errors: [{
-                message: "setTimeout 第二个参数禁止是数字",
+                message: "setTimeout第二个参数禁止是数字",
                 type: "CallExpression" // rule 监听的对应钩子
             }]
         }
